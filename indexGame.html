@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Toe</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            /* background-color: aquamarine; */
+            /* text-align: center; */
+        }
+        body{
+            /* background-color: aquamarine; */
+            text-align: center;
+        }
+        nav{
+        background-color: rgb(46, 3, 46);
+        color: white;
+        height: 60px;
+        font-size: 27px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 60px;
+        }
+
+        .container{
+            height: 70vh;
+            display: flex;
+            /* flex-wrap: nowrap; */
+            align-items: center;
+            justify-content: center;
+
+
+        }
+        .game{
+            height: 60vmin;
+            width: 60vmin;
+             display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap : 1.5vmin;
+
+        }
+        .box{
+                height: 18vmin;
+                width: 18vmin;
+                border-radius: 20px;
+                border: none;
+                font-size: 8vmin;
+                background-color: #a5bec7;
+                box-shadow: 0 0 2rem rgba(0,0,0,0.3);
+        }
+        #reset{
+            padding: 1rem;
+            font-size: 1.25rem;
+            background-color: #191931;
+            color: white;
+            border-radius: 15px;
+            border: none;
+            box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+            cursor: pointer;
+        }
+        #ngame{
+            padding: 1rem;
+            font-size: 1.25rem;
+            background-color: #191931;
+            color: white;
+            border-radius: 15px;
+            border: none;
+            box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+            cursor: pointer;
+        }
+        #wmsg{
+            color: #27291d;
+            font-size: 5vmin;
+        }
+        .msg{
+            height: 100vmin;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 4rem;
+        }
+        .hide{
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Tic Tac Toe</h1>
+
+    </nav>
+    <div class="msg hide">
+        <img src="excited.gif" alt="">
+        <p id="wmsg">Winner</p>
+        <button id="ngame">New Game</button>
+
+    </div>
+    <main>
+        <div class="container">
+        <div class="game">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+        </div>
+        </div>
+        <button id="reset">Reset Game</button>
+    </main>
+    <script src="appjs.js"></script>
+</body>
+</html>
